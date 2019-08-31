@@ -1,0 +1,57 @@
+<html>
+
+<head>
+  <!-- Load the latest version of TensorFlow.js -->
+  <title>Image Classifier</title>
+  <script src="https://unpkg.com/@tensorflow/tfjs"></script>
+  <script src="https://unpkg.com/@tensorflow-models/mobilenet@2.0.2"></script>
+  <script src="https://unpkg.com/@tensorflow-models/knn-classifier"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+</head>
+
+<body>
+  <nav class="grey darken-4" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Image Classification</a>
+
+    </div>
+  </nav>
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m2">
+        </div>
+
+        <div class="col s12 m8">
+          <div class="card">
+            <div class="card-image">
+              <video autoplay playsinline muted id="webcam" width="100%" height="50%"></video>
+            </div>
+            <div class="card-content">
+              <div id="console"></div>
+            </div>
+            <div class="card-action">
+              <button id="class-a" class="waves-effect waves-light btn black">Add A</button>
+              <button id="class-b" class="waves-effect waves-light btn black">Add B</button>
+              <button id="class-c" class="waves-effect waves-light btn black">Add C</button>
+              <button id="no-action" class="waves-effect waves-light btn black">No Action</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m2">
+
+        </div>
+      </div>
+    </div>
+    <br><br>
+  </div>
+
+  <!-- Load index.js after the content of the page -->
+  <script src="index.js"></script>
+</body>
+
+</html>
